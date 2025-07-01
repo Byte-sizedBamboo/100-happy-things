@@ -165,5 +165,5 @@ st.markdown("""
 
 # 跳转按钮
 if st.button("开始填写小幸福"):
-    st.switch_page("pages/enterluck.py")
+    st.switch_page("pages/My little things.py")
 
