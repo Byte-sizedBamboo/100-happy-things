@@ -2,7 +2,8 @@ import streamlit as st
 from PIL import Image
 
 # 插入顶部大图
-top_image = Image.open(r"D:\Python\things_make_me_happy\images\cover_page.jpg")
+from PIL import Image
+top_image = Image.open("images/cover_page.jpg")
 st.image(top_image, use_column_width=True)
 
 
