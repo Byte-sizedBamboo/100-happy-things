@@ -1,10 +1,16 @@
 import streamlit as st
 from PIL import Image
 
+import os  # 别忘了导入这个模块！
+
 # 插入顶部大图
-from PIL import Image
-top_image = Image.open("images/cover_page.jpg")
+current_dir = os.path.dirname(__file__)
+image_path = os.path.join(current_dir, "images", "cover_page.jpg")
+top_image = Image.open(image_path)
 st.image(top_image, use_column_width=True)
+
+# top_image = Image.open("images/cover_page.jpg")
+# st.image(top_image, use_column_width=True)
 
 
 st.set_page_config(page_title="最重要的小事", page_icon="🥕")
